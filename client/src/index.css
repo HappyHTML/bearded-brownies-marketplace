@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 11% 98%; /* #F8F9FA */
+  --foreground: 20 14.3% 4.1%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --primary: 25 76% 27%; /* Brand Brown #8B4513 */
+  --primary-foreground: 60 17% 89%; /* Brand Cream #F5F5DC */
+  --secondary: 60 4.8% 95.9%;
+  --secondary-foreground: 24 9.8% 10%;
+  --accent: 34 78% 63%; /* Brand Amber #FFB347 */
+  --accent-foreground: 24 9.8% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 20 14.3% 4.1%;
+  --radius: 0.5rem;
+  
+  /* Custom brand colors */
+  --brand-brown: 25 76% 27%; /* #8B4513 */
+  --brand-cream: 60 17% 89%; /* #F5F5DC */
+  --brand-amber: 34 78% 63%; /* #FFB347 */
+  --brand-charcoal: 0 0% 20%; /* #333333 */
+  --brand-forest: 120 61% 34%; /* #228B22 */
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 25 76% 27%;
+  --primary-foreground: 60 17% 89%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 34 78% 63%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .brand-brown {
+    color: hsl(var(--brand-brown));
+  }
+  
+  .bg-brand-brown {
+    background-color: hsl(var(--brand-brown));
+  }
+  
+  .brand-cream {
+    color: hsl(var(--brand-cream));
+  }
+  
+  .bg-brand-cream {
+    background-color: hsl(var(--brand-cream));
+  }
+  
+  .brand-amber {
+    color: hsl(var(--brand-amber));
+  }
+  
+  .bg-brand-amber {
+    background-color: hsl(var(--brand-amber));
+  }
+  
+  .brand-charcoal {
+    color: hsl(var(--brand-charcoal));
+  }
+  
+  .bg-brand-charcoal {
+    background-color: hsl(var(--brand-charcoal));
+  }
+  
+  .brand-forest {
+    color: hsl(var(--brand-forest));
+  }
+  
+  .bg-brand-forest {
+    background-color: hsl(var(--brand-forest));
+  }
+}
